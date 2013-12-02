@@ -11,8 +11,8 @@ See it in action: https://www.youtube.com/watch?v=oPddaJtveMI
 Usage
 -----
 
-First, you require the module, and run `listControllers` to get
-a list of HID devices that look like on Original Xbox Controller.
+First, you require the module and run `listControllers()` to get
+a list of HID devices that look like an Original Xbox Controller.
 The array returned is a filtered version of `HID.devices()` from the
 [node-hid](https://github.com/node-hid/node-hid) module.
 
@@ -105,16 +105,17 @@ the controllers state is changed.
 - Event `vaules`: emitted whenever the controllers state is changed, contains information
 about the buttons pressed and axis moved
 
-Because this class is a subclass of `HID.HID` from
-[node-hid](https://github.com/node-hid/node-hid), you can also subscribe
-to the events emitted directly by this object.
+Because `XboxController` inherits from `HID.HID` ([node-hid](https://github.com/node-hid/node-hid)),
+you can also subscribe to the events emitted directly by this object.
 
 - Event `error`: any possible error with the HID device
 - Event `data`: the raw data buffer from the device, this is parsed for you
-and emitted in a nicer form with the `values` event
+and emitted in a nicer format in the `values` event
 
 Installation
 ------------
+
+Install the module
 
     npm install xbox-hid-controller
 
@@ -129,10 +130,10 @@ install the dev dependencies from npm
 Mac OS X
 --------
 
-You must first installed this driver http://xhd.sourceforge.net/ for the
+You must first installe this driver http://xhd.sourceforge.net/ for the
 original Xbox controller to be recognized by OS X.
 
-If you are running Mountain Lion, Mavericks, or above, you need to download
+**NOTE:** If you are running Mountain Lion, Mavericks, or above, you need to download
 this version of the driver specifically for it to work
 http://macman860.wordpress.com/2013/05/03/xbox-driver-for-mac-os-x-lion/
 
