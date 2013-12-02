@@ -1,0 +1,36 @@
+{
+  "name": "xbox-hid-controller",
+  "description": "Original Xbox Controller API using node-hid HID device",
+  "version": "0.0.0",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bahamas10/node-xbox-hid-controller.git"
+  },
+  "scripts": {
+    "test": "for f in test/*.js; do echo \"\n$f\"; node \"$f\" || exit 1; sleep 2; done; echo Passed; exit 0"
+  },
+  "main": "./xbox-hid-controller.js",
+  "dependencies": {
+    "node-hid": "~0.3.1"
+  },
+  "bin": {},
+  "devDependencies": {
+    "colors": "~0.6.2",
+    "clear": "~0.0.1"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [
+    "xbmc",
+    "xbox",
+    "event",
+    "hid",
+    "original xbox",
+    "joystick",
+    "gamepad"
+  ]
+}
