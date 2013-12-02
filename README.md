@@ -1,8 +1,12 @@
 Xbox HID Controller
 ===================
 
-Original Xbox Controller API using
-[node-hid](https://github.com/node-hid/node-hid) HID device
+Original Xbox Controller API using the
+[node-hid](https://github.com/node-hid/node-hid) HID device driver
+
+![duke]http://upload.wikimedia.org/wikipedia/commons/c/c5/Xbox-Duke-Controller.jpg)
+
+See it in action: https://www.youtube.com/watch?v=oPddaJtveMI
 
 Usage
 -----
