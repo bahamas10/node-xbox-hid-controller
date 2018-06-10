@@ -130,7 +130,7 @@ install the dev dependencies from npm
 Mac OS X
 --------
 
-You must first installe this driver http://xhd.sourceforge.net/ for the
+You must first install this driver http://xhd.sourceforge.net/ for the
 original Xbox controller to be recognized by OS X.
 
 **NOTE:** If you are running Mountain Lion, Mavericks, or above, you need to download
